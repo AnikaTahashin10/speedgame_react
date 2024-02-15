@@ -1,0 +1,130 @@
+
+:root {
+  
+  font-family: "Abril Fatface", serif;
+  line-height: 1.5;
+  font-weight: 300;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  text-align: center;
+}
+h1 {
+  font-family: "Abril Fatface", serif;
+  font-size: 3rem;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.circle {
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 50%;
+  color: #5b5b5b;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle.active {
+  background: url('./assets/water.svg') center center/cover;
+
+}
+
+.score {
+  font-weight: 400;
+  font-family: "Abril Fatface", serif;
+  font-size: 2rem;
+}
+
+input, button  {
+  padding:0.8rem 2rem;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 20px;
+  border: none;
+  margin: 2rem;
+}
+
+button {
+  background-color: aliceblue;
+  color: #333;
+  font-weight: 400;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: #333;
+}
+
+.gameover_box {
+  background: white;
+  padding: 1rem;
+  width: 40%;
+  min-height: 25%;
+  border-radius: 5px;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.gameover_box button {
+  background-color: transparent;
+  position: absolute;
+  font-weight: 400;
+  top: -15px;
+  right: -15px;
+  cursor: pointer;
+  padding:0
+}
+
+.game_data {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+
+
+
+
